@@ -87,17 +87,44 @@ Since now domain joined, check if other created users can login
 
 ## Discussion
 
+I installed Windows Server ISO, Active Directory, and DHCP on the Domain Controller. I then created a domain named `cyberjour`, created an Admin User, and added the user to the Admin Domain. Remote Access was also installed for future plans. DHCP was setup to use IP ranges of 192.xxx.100-200. I executed the PowerShell script that references a text file contaning users by first name and last name to mass create 1000 users instead of doing it manually.
+
+
+The script works as follows:
+
+1. The text file containing users by first and last name is assigned as an array to a variable
+
+2. A for-loop is executed for each name in the array
+
+3. The name is split on the empty string and the value in the first position is assigned to the first name variable the value in the first position (ex. De'Jour Ford --> De'Jour)
+
+4. The name is split on the empty string and the value in the second position is assigned to the last name variable (ex. De'Jour Ford --> Ford) 
+
+5. The username is the result of the first character of the first name + last name then tranformed to lower case (ex. dford)
+
+6. There's a write statement, "Creating User $($usernmae)" to help with debugging if there are issues
+
+7. Finally, a user is created using commands in PowerShell and the variables
+
+8. The process is repeated until each name in the loop is addressed
+
+
+I then created the client machine and installed the Windows 10 ISO, logged in, and checked for internet connection by pinging google.com. I checked the host name to ensure the client machine wasn't a part of a domain, then added the client to the `cyberjour` domain and checked DHCP for the address lease. With a successful domain join, I tested a differnent user login from Active Directory to confirm everything was working properly.
 
 ## Planned Improvements
 
 `Create a seperate Windows Server for DHCP to simulate real-world production environments`
     
-    1. `DC - Domain Controller`
+    1. DC - Domain Controller
     
-    2. `SRV-DHCP - DCHP Server`
+    2. SRV-DHCP - DCHP Server
     
-    3. `CLIENT1 - Client Machine`
+    3. CLIENT1 - Client Machine
     
-    4. `CLIENT2 - Client Machine`
+    4. CLIENT2 - Client Machine
     
-    5. `KaliLinux - Attacker Machine`
+    5. KaliLinux - Attacker Machine
+
+`Create an internal machine hosting a vulnerable web app`
+
+`Install outdated or vulnerable software and use **Nessus** to do a vulnerability scan`
