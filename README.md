@@ -33,7 +33,7 @@ Install Active Directory
 
 Create Domain named `cyberjour`
 
-<img src=-"images/create_domain.png" alt="domain creation" width=600/> <br />
+<img src="images/create_domain.png" alt="domain creation" width=600/> <br />
 
 Create Admin User
 
@@ -59,3 +59,6 @@ Setup and authorize DHCP
 
 <img src="images/setup_and_authorize_dhcp.png" alt="dhcp setup" width=600/><br />
 
+Run PowerShell script in PowerShell ISE to create 1000 users in Active Directory
+
+<img src="images/run_script.png" alt="run script" width=600/><br />
