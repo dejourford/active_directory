@@ -67,11 +67,37 @@ Create client machine and install windows
 
 <img src="images/install_windows.png" alt="install windows" width=600/><br />
 
+Upon login, check for internet access by pinging google.com
+
+<img src="images/ping.png" alt="ping" width=600/><br />
+
+Check host name, join domain, and check DHCP for address lease
+
+<img src="images/check_host_name.png" alt="join domain" width=600/><br />
+
+<img src="images/join_domain.png" alt="join domain" width=600/><br />
+
+<img src="images/dhcp_lease_check.png" alt="check address lease" width=600/><br />
+
+Since now domain joined, check if other created users can login
+
+<img src="images/check_sign_in.png" alt="check user sign on" width=600 /><br />
+
+<img src="images/check_sign_in2.png" alt="check user sign on" width=600/><br />
+
+## Discussion
+
+
 ## Planned Improvements
 
 `Create a seperate Windows Server for DHCP to simulate real-world production environments`
+    
     1. `DC - Domain Controller`
+    
     2. `SRV-DHCP - DCHP Server`
+    
     3. `CLIENT1 - Client Machine`
+    
     4. `CLIENT2 - Client Machine`
+    
     5. `KaliLinux - Attacker Machine`
