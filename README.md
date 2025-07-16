@@ -35,27 +35,21 @@ Create Domain named `cyberjour`
 
 <img src="images/create_domain.png" alt="domain creation" width=600/> <br />
 
-Create Admin User
+Create Admin User and add to domain admins
 
 <img src="images/create_admin_user.png" alt="admin user creation" width=600/><br />
 
-Add created admin user to domain admins
-
 <img src="images/add_user_to_domain_admins.png" alt="add user to domain admins" width=600/><br />
 
-Install Remote Access
+Install and configure Remote Access
 
 <img src="images/install_remote_access.png" alt="install remote access" width=600/><br />
 
-Configure Remote Access
-
 <img src="images/configure_remote_access.png" alt="configure remote access" width=600/><br />
 
-Install DHCP Server
+Install, setup, and authorize DHCP Server
 
 <img src="images/install_dhcp_server.png" alt="install dhcp server" width=600/><br />
-
-Setup and authorize DHCP
 
 <img src="images/setup_and_authorize_dhcp.png" alt="dhcp setup" width=600/><br />
 
@@ -67,6 +61,8 @@ Verify users were successfully created by checking Active Directory
 
 <img src="images/verify_users_created.png" alt="users in active directory" width=600/><br />
 
-Create client machine
+Create client machine and install windows
 
 <img src="images/create_client_machine.png" alt="create client machine" width=600/><br />
+
+<img src="images/install_windows.png" alt="install windows" width=600/><br />
