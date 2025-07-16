@@ -66,3 +66,12 @@ Create client machine and install windows
 <img src="images/create_client_machine.png" alt="create client machine" width=600/><br />
 
 <img src="images/install_windows.png" alt="install windows" width=600/><br />
+
+## Planned Improvements
+
+`Create a seperate Windows Server for DHCP to simulate real-world production environments`
+    1. `DC - Domain Controller`
+    2. `SRV-DHCP - DCHP Server`
+    3. `CLIENT1 - Client Machine`
+    4. `CLIENT2 - Client Machine`
+    5. `KaliLinux - Attacker Machine`
