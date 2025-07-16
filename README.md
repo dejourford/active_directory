@@ -62,3 +62,7 @@ Setup and authorize DHCP
 Run PowerShell script in PowerShell ISE to create 1000 users in Active Directory
 
 <img src="images/run_script.png" alt="run script" width=600/><br />
+
+Verify users were successfully created by checking Active Directory
+
+<img src="images/verify_users_created.png" alt="users in active directory" width=600/> <br />
