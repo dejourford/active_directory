@@ -65,4 +65,7 @@ Run PowerShell script in PowerShell ISE to create 1000 users in Active Directory
 
 Verify users were successfully created by checking Active Directory
 
-<img src="images/verify_users_created.png" alt="users in active directory" width=600/> <br />
+<img src="images/verify_users_created.png" alt="users in active directory" width=600/><br />
+
+Create client machine
+<img src="images/create_client_machine.png" alt="create client machine" width=600/><br />
